@@ -2,13 +2,13 @@
 
 ## 📌 Project Overview
 
-This project predicts customer churn using machine learning techniques to help businesses proactively retain customers.
+Customer churn prediction is critical for subscription-based companies. This project aims to identify customers likely to churn using machine learning techniques and provide actionable business insights.
 
 ---
 
 ## 🎯 Business Objective
 
-Predict customers likely to churn and identify the main factors influencing churn.
+Predict customers likely to churn and identify key drivers of customer attrition.
 
 ---
 
@@ -18,13 +18,13 @@ Telco Customer Churn Dataset
 
 - 7043 customers
 - 21 features
-- Binary classification
+- Binary classification problem
 
 ---
 
 ## 🧠 Methodology
 
-CRISP-DM:
+This project follows CRISP-DM methodology:
 
 - Business Understanding
 - Data Understanding
@@ -38,7 +38,7 @@ CRISP-DM:
 
 ![Churn Distribution](images/churn_distribution.png)
 
-Most customers did not churn, showing class imbalance.
+The dataset shows class imbalance, which motivated the use of SMOTE.
 
 ---
 
@@ -46,16 +46,21 @@ Most customers did not churn, showing class imbalance.
 
 ![Correlation Matrix](images/correlation_matrix.png)
 
-Correlation analysis helped identify relevant features.
+Key insights:
+
+- Customers with longer tenure churn less
+- Long-term contracts reduce churn
+- Higher monthly charges increase churn
+- Customers with tech support churn less
 
 ---
 
-## 🤖 Model Used
+## 🤖 Models Used
 
-- Logistic Regression
+- Logistic Regression (Baseline)
 - Random Forest
 - Random Forest + SMOTE
-- Random Forest Tuned
+- Random Forest + Hyperparameter Tuning
 
 ---
 
@@ -66,9 +71,10 @@ Correlation analysis helped identify relevant features.
 Top drivers of churn:
 
 - Tenure
-- Contract
-- Monthly Charges
-- Tech Support
+- Contract type
+- Monthly charges
+- Tech support
+- Online security
 
 ---
 
@@ -76,7 +82,20 @@ Top drivers of churn:
 
 ![Confusion Matrix](images/confusion_matrix.png)
 
-The model prioritizes recall to identify churn customers.
+The model prioritizes identifying customers at risk of churn, even if some false positives occur. This approach is useful for retention strategies.
+
+---
+
+## 💡 Business Recommendations
+
+Based on model insights:
+
+- Focus retention strategies on new customers
+- Promote long-term contracts
+- Offer technical support packages
+- Review pricing for high monthly charge customers
+- Identify high-risk customers early
+- Implement proactive retention campaigns
 
 ---
 
@@ -88,6 +107,122 @@ The model prioritizes recall to identify churn customers.
 - Scikit-learn
 - Matplotlib
 - Seaborn
+- SMOTE
+
+---
+
+## 📁 Project Structure
+
+# 📊 Telco Customer Churn Prediction
+
+## 📌 Project Overview
+
+Customer churn prediction is critical for subscription-based companies. This project aims to identify customers likely to churn using machine learning techniques and provide actionable business insights.
+
+---
+
+## 🎯 Business Objective
+
+Predict customers likely to churn and identify key drivers of customer attrition.
+
+---
+
+## 📊 Dataset
+
+Telco Customer Churn Dataset
+
+- 7043 customers
+- 21 features
+- Binary classification problem
+
+---
+
+## 🧠 Methodology
+
+This project follows CRISP-DM methodology:
+
+- Business Understanding
+- Data Understanding
+- Data Preparation
+- Modeling
+- Evaluation
+
+---
+
+## 📊 Churn Distribution
+
+![Churn Distribution](images/churn_distribution.png)
+
+The dataset shows class imbalance, which motivated the use of SMOTE.
+
+---
+
+## 🔍 Correlation Matrix
+
+![Correlation Matrix](images/correlation_matrix.png)
+
+Key insights:
+
+- Customers with longer tenure churn less
+- Long-term contracts reduce churn
+- Higher monthly charges increase churn
+- Customers with tech support churn less
+
+---
+
+## 🤖 Models Used
+
+- Logistic Regression (Baseline)
+- Random Forest
+- Random Forest + SMOTE
+- Random Forest + Hyperparameter Tuning
+
+---
+
+## 📈 Feature Importance
+
+![Feature Importance](images/feature_importance.png)
+
+Top drivers of churn:
+
+- Tenure
+- Contract type
+- Monthly charges
+- Tech support
+- Online security
+
+---
+
+## 🎯 Model Performance
+
+![Confusion Matrix](images/confusion_matrix.png)
+
+The model prioritizes identifying customers at risk of churn, even if some false positives occur. This approach is useful for retention strategies.
+
+---
+
+## 💡 Business Recommendations
+
+Based on model insights:
+
+- Focus retention strategies on new customers
+- Promote long-term contracts
+- Offer technical support packages
+- Review pricing for high monthly charge customers
+- Identify high-risk customers early
+- Implement proactive retention campaigns
+
+---
+
+## 🛠 Technologies Used
+
+- Python
+- Pandas
+- Numpy
+- Scikit-learn
+- Matplotlib
+- Seaborn
+- SMOTE
 
 ---
 
@@ -106,14 +241,16 @@ telco-churn-prediction
 
 ## 🚀 Business Impact
 
-This model helps:
+This model helps companies:
 
 - Reduce churn
-- Improve retention
-- Increase revenue
+- Increase customer retention
+- Improve revenue
+- Identify at-risk customers
 
 ---
 
 ## 👩‍💻 Author
 
-Leidy Jaramillo
+Leidy Jaramillo  
+Data Science Project
