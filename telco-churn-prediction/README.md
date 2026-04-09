@@ -2,15 +2,13 @@
 
 ## 📌 Project Overview
 
-Customer churn is a critical problem for subscription-based businesses. This project aims to predict customer churn using machine learning techniques to help companies proactively retain customers.
-
-The model identifies customers at risk of leaving and provides business insights to reduce churn.
+This project predicts customer churn using machine learning techniques to help businesses proactively retain customers.
 
 ---
 
 ## 🎯 Business Objective
 
-Predict which customers are likely to churn and identify the key factors driving customer attrition.
+Predict customers likely to churn and identify the main factors influencing churn.
 
 ---
 
@@ -20,85 +18,65 @@ Telco Customer Churn Dataset
 
 - 7043 customers
 - 21 features
-- Binary classification problem (Churn: Yes/No)
+- Binary classification
 
 ---
 
 ## 🧠 Methodology
 
-This project follows the **CRISP-DM** methodology:
+CRISP-DM:
 
-1. Business Understanding
-2. Data Understanding
-3. Data Preparation
-4. Modeling
-5. Evaluation
-6. Deployment (Conceptual)
-
----
-
-## ⚙️ Data Preparation
-
-- Missing values handling
-- Data type corrections
-- Feature encoding
-- Feature engineering
-
-New features created:
-
-- tenure_group
-- is_new_customer
+- Business Understanding
+- Data Understanding
+- Data Preparation
+- Modeling
+- Evaluation
 
 ---
-
-## 🤖 Models Used
-
-- Logistic Regression
-- Random Forest
-- Random Forest + SMOTE
-- Random Forest + GridSearchCV
-
----
-
-## 🎯 Model Evaluation
-
-Best Model: **Random Forest Tuned**
-
-| Metric | Value |
-|--------|-------|
-| Accuracy | 0.74 |
-| Recall (Churn) | 0.76 |
-| F1 Score | 0.61 |
-
-The model prioritizes **recall**, ensuring most churn cases are detected.
 
 ## 📊 Churn Distribution
 
 ![Churn Distribution](images/churn_distribution.png)
 
-Most customers did not churn, showing class imbalance. This justified the use of SMOTE during modeling.
+Most customers did not churn, showing class imbalance.
+
+---
+
+## 🔍 Correlation Matrix
+
+![Correlation Matrix](images/correlation_matrix.png)
+
+Correlation analysis helped identify relevant features.
+
+---
+
+## 🤖 Model Used
+
+- Logistic Regression
+- Random Forest
+- Random Forest + SMOTE
+- Random Forest Tuned
+
 ---
 
 ## 📈 Feature Importance
 
-Top factors influencing churn:
+![Feature Importance](images/feature_importance.png)
+
+Top drivers of churn:
 
 - Tenure
-- Contract type
-- Monthly charges
-- Tech support
-- Online security
+- Contract
+- Monthly Charges
+- Tech Support
 
 ---
 
-## 📊 Business Insights
+## 🎯 Model Performance
 
-Key findings:
+![Confusion Matrix](images/confusion_matrix.png)
 
-- New customers are more likely to churn
-- Long-term contracts reduce churn
-- Customers with tech support churn less
-- Higher monthly charges increase churn risk
+The model prioritizes recall to identify churn customers.
 
 ---
 
@@ -110,7 +88,6 @@ Key findings:
 - Scikit-learn
 - Matplotlib
 - Seaborn
-- SMOTE
 
 ---
 
@@ -129,16 +106,14 @@ telco-churn-prediction
 
 ## 🚀 Business Impact
 
-This model helps companies:
+This model helps:
 
-- Identify at-risk customers
 - Reduce churn
+- Improve retention
 - Increase revenue
-- Improve customer retention
 
 ---
 
 ## 👩‍💻 Author
 
-Leidy Jaramillo  
-Data Science Project
+Leidy Jaramillo
