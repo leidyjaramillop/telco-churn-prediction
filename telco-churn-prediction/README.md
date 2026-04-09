@@ -1,10 +1,16 @@
-# Telco Customer Churn Prediction
+# 📊 Telco Customer Churn Prediction
 
 ## 📌 Project Overview
 
-This project aims to predict customer churn using machine learning techniques.
+Customer churn is a critical problem for subscription-based businesses. This project aims to predict customer churn using machine learning techniques to help companies proactively retain customers.
 
-The objective is to identify customers at risk of leaving and help businesses take preventive actions.
+The model identifies customers at risk of leaving and provides business insights to reduce churn.
+
+---
+
+## 🎯 Business Objective
+
+Predict which customers are likely to churn and identify the key factors driving customer attrition.
 
 ---
 
@@ -14,13 +20,13 @@ Telco Customer Churn Dataset
 
 - 7043 customers
 - 21 features
-- Binary target: Churn (Yes / No)
+- Binary classification problem (Churn: Yes/No)
 
 ---
 
 ## 🧠 Methodology
 
-CRISP-DM
+This project follows the **CRISP-DM** methodology:
 
 1. Business Understanding
 2. Data Understanding
@@ -31,38 +37,71 @@ CRISP-DM
 
 ---
 
+## ⚙️ Data Preparation
+
+- Missing values handling
+- Data type corrections
+- Feature encoding
+- Feature engineering
+
+New features created:
+
+- tenure_group
+- is_new_customer
+
+---
+
 ## 🤖 Models Used
 
 - Logistic Regression
 - Random Forest
-- Random Forest (Tuned)
-- SMOTE balancing
+- Random Forest + SMOTE
+- Random Forest + GridSearchCV
 
 ---
 
-## 🎯 Results
+## 🎯 Model Evaluation
 
-Best Model: Random Forest Tuned
+Best Model: **Random Forest Tuned**
 
-Recall for churn: **0.76**
+| Metric | Value |
+|--------|-------|
+| Accuracy | 0.74 |
+| Recall (Churn) | 0.76 |
+| F1 Score | 0.61 |
 
-This allows identifying most customers likely to churn.
+The model prioritizes **recall**, ensuring most churn cases are detected.
 
 ---
 
-## 📈 Key Insights
+## 📈 Feature Importance
 
-- New customers more likely to churn
+Top factors influencing churn:
+
+- Tenure
+- Contract type
+- Monthly charges
+- Tech support
+- Online security
+
+---
+
+## 📊 Business Insights
+
+Key findings:
+
+- New customers are more likely to churn
 - Long-term contracts reduce churn
-- Tech support reduces churn
-- High monthly charges increase churn risk
+- Customers with tech support churn less
+- Higher monthly charges increase churn risk
 
 ---
 
-## 🛠 Technologies
+## 🛠 Technologies Used
 
 - Python
 - Pandas
+- Numpy
 - Scikit-learn
 - Matplotlib
 - Seaborn
@@ -80,6 +119,17 @@ telco-churn-prediction
 ├── README.md
 └── requirements.txt
 
+
+---
+
+## 🚀 Business Impact
+
+This model helps companies:
+
+- Identify at-risk customers
+- Reduce churn
+- Increase revenue
+- Improve customer retention
 
 ---
 
