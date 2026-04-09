@@ -72,6 +72,11 @@ Best Model: **Random Forest Tuned**
 
 The model prioritizes **recall**, ensuring most churn cases are detected.
 
+## 📊 Churn Distribution
+
+![Churn Distribution](images/churn_distribution.png)
+
+Most customers did not churn, showing class imbalance. This justified the use of SMOTE during modeling.
 ---
 
 ## 📈 Feature Importance
