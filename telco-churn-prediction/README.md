@@ -228,14 +228,6 @@ Based on model insights:
 
 ## 📁 Project Structure
 
-telco-churn-prediction
-│
-├── notebook
-├── data
-├── images
-├── README.md
-└── requirements.txt
-
 
 ---
 
